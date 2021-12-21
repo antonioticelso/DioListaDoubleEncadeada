@@ -1,10 +1,10 @@
-package br.com.digitalinnovation;
+package br.com.digitalinnovation.listaDoubleEncadeada;
 
 public class Application {
 
     public static void main(String args[]){
 
-        ListaDuplamenteEncadeada<String> minhaListaEncadeada = new ListaDuplamenteEncadeada<>();
+        ListaDoubleEncadeada<String> minhaListaEncadeada = new ListaDoubleEncadeada<>();
 
         minhaListaEncadeada.add("c1");
         minhaListaEncadeada.add("c2");

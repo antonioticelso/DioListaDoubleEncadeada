@@ -1,14 +1,15 @@
-package br.com.digitalinnovation;
+package br.com.digitalinnovation.listaDoubleEncadeada;
 
 public class ListaDoubleEncadeada<T> {
 
-    private NoDuplo<T> primeiroNo;
-    private NoDuplo<T> ultimoNo;
+    private NoDouble<T> primeiroNo;
+    private NoDouble<T> ultimoNo;
+//    private NoDuplo<T> primeiroNo;
 
     private int tamanhoLista = 0;
 
     public void add(T elemento){
-        NoDuplo<T> novoNo = new NoDuplo<T>(elemento);
+        NoDouble<T> novoNo = new NoDouble<T>(elemento);
         novoNo.setNoProximo(null);
         novoNo.setNoPrevio(ultimoNo);
         if(primeiroNo == null){
@@ -22,8 +23,8 @@ public class ListaDoubleEncadeada<T> {
     }
 
     public void add(int index, T elemento){
-        NoDuplo<T> noAuxiliar = getNo(index);
-        NoDuplo<T> novoNo = new NoDuplo<>(elemento);
+        NoDouble<T> noAuxiliar = getNo(index);
+        NoDouble<T> novoNo = new NoDouble<T>(elemento);
         novoNo.setNoProximo(noAuxiliar);
 
         if(novoNo.getNoProximo() != null){
@@ -48,7 +49,7 @@ public class ListaDoubleEncadeada<T> {
                 primeiroNo.setNoPrevio(null);
             }
         }else{
-            NoDuplo<T> noAuxiliar = getNo(index);
+            NoDouble<T> noAuxiliar = getNo(index);
             noAuxiliar.getNoPrevio().setNoProximo(noAuxiliar.getNoProximo());
             if(noAuxiliar != ultimoNo){
                 noAuxiliar.getNoProximo().setNoPrevio(noAuxiliar.getNoPrevio());
@@ -63,8 +64,8 @@ public class ListaDoubleEncadeada<T> {
         return getNo(index).getConteudo();
     }
 
-    private NoDuplo<T> getNo(int index){
-        NoDuplo<T> noAuxiliar = primeiroNo;
+    private NoDouble<T> getNo(int index){
+        NoDouble<T> noAuxiliar = primeiroNo;
         for(int i = 0; (i < index) && (noAuxiliar != null); i++){
             noAuxiliar = noAuxiliar.getNoProximo();
         }
@@ -78,7 +79,7 @@ public class ListaDoubleEncadeada<T> {
     @Override
     public String toString() {
         String strRetorno = "";
-        NoDuplo<T> noAuxiliar = primeiroNo;
+        NoDouble<T> noAuxiliar = primeiroNo;
         for(int i = 0; i < size(); i++){
             strRetorno += "[No{conteudo=" + noAuxiliar.getConteudo() +"}]--->";
             noAuxiliar = noAuxiliar.getNoProximo();
