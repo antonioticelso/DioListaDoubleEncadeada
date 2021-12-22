@@ -3,3 +3,19 @@ K
 DioListaDoubleEncadeada.iml,b/d/bd2457f36d94f3da8191145e769c552a056e43c8
 j
 :.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml,3/7/37c2e407092814484115453c571b5dc05560032c
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+…
+Usrc/main/java/br/com/digitalinnovation/listaDoubleEncadeada/ListaDoubleEncadeada.java,2/7/27d5c76e618583ddfcb093eebf52acb712b01d10
+y
+Isrc/main/java/br/com/digitalinnovation/listaDoubleEncadeada/NoDouble.java,7/8/78f1c520ffc37d7fdb24b585eab8c35b2a1c5154
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+|
+Lsrc/main/java/br/com/digitalinnovation/listaDoubleEncadeada/Application.java,8/1/81d573cbef8ee026f60df0a3ba0f474fe0b3b00e
+o
+?src/main/java/br/com/digitalinnovation/listaEmArvore/NoBin.java,6/8/68849e6628c3c196c22e297bcc3ab8c757cc6b07
+y
+Isrc/main/java/br/com/digitalinnovation/listaEmArvore/model/ObjArvore.java,9/7/97e67d5e61069b12c1dcab7e53d45f90e6e2dc92
+s
+Csrc/main/java/br/com/digitalinnovation/listaEmArvore/model/Obj.java,3/9/39e063ebfca1220980a81ff88742dbd296ad18f8
